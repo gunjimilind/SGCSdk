@@ -1,5 +1,5 @@
 {
-        "name": "sgcsdk/sgc",
+        "name": "sgcsdk/sgcapi",
         "type": "library",
         "description": "SGCSdk for API",
         "keywords": ["sgcsdk", "sgc", "api"],
