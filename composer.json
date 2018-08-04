@@ -1,0 +1,30 @@
+{
+        "name": "sgcsdk/sgc",
+        "type": "library",
+        "description": "SGCSdk for API",
+        "keywords": ["sgcsdk", "sgc", "api"],
+        "homepage": "https://github.com/gunjimilind/SGCSdk",
+        "license": "MIT",
+        "authors": [
+                {
+                        "name": "Milind Gunji",
+                        "email": "gunjimilind@gmail.com",
+                        "role": "Developer"
+                }
+        ],
+
+        "require": {
+                "php": ">=5.3.0",
+                "guzzlehttp/guzzle": "^6.3"
+        },
+        "autoload": {
+                "psr-4": {
+                        "SGCSdk\\object\\": ["src/object/common", "src/object/reseller", "src/object/sms", "src/object/user"],
+                        "SGCSdk\\config\\": ["src/config/common", "src/config/reseller", "src/config/sms", "src/config/user"],
+                        "SGCSdk\\api\\user\\": ["src/api/user"],
+                        "SGCSdk\\api\\sms\\": ["src/api/sms"],
+                        "SGCSdk\\api\\reseller\\": ["src/api/reseller"],
+                        "SGCSdk\\lib\\": ["src/lib"]
+                }
+        }
+}
