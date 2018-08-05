@@ -30,6 +30,9 @@
 
 	//Read SenderId list
 	echo "Read SenderId: " . $request->Read();
+	echo "<pre>";
+	print_r(json_decode($request->Read())->response->senderidList);
+	echo "<pre>";
 	echo "<br />";
 	echo "<br />";
 
