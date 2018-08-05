@@ -16,7 +16,8 @@
 		const API_USER_WEBHOOK_METHOD_UPDATE = "update";
 		const API_USER_WEBHOOK_METHOD_DELETE = "delete";
 		//User Params
-		const API_USER_WEBHOOK_PARAM_URL = "url";
+		const API_USER_WEBHOOK_PARAM_SMS_WEBHOOK = "smswebhook";
+		const API_USER_WEBHOOK_PARAM_SMS_WEBHOOK_RATE = "smswebhookrate";
 
 	}
 	

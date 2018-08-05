@@ -2,7 +2,7 @@
 
 	namespace SGCSdk\object;
 
-	defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
+defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
 
 	/*	 * *******smsgatewaycentre******* * */
 
@@ -26,7 +26,8 @@
 		private $draftContent;
 		private $newPassword;
 		private $senderId;
-		private $webhook;
+		private $smsWebhook;
+		private $smsWebhookRate;
 		private $uuId;
 		private $output;
 		private $id;
@@ -183,11 +184,19 @@
 		}
 
 		/**
-		 * WebHook
+		 * SmsWebHook
 		 * @return type
 		 */
-		function getWebhook() {
-			return $this->webhook;
+		function getSmsWebhook() {
+			return $this->smsWebhook;
+		}
+
+		/**
+		 * SmsWebHookRate
+		 * @return type
+		 */
+		function getSmsWebhookRate() {
+			return $this->smsWebhookRate;
 		}
 
 		/**
@@ -359,11 +368,19 @@
 		}
 
 		/**
-		 * Set WebHook
-		 * @param type $webhook
+		 * Set SmsWebHook
+		 * @param type $smsWebhook
 		 */
-		function setWebhook($webhook) {
-			$this->webhook = $webhook;
+		function setSmsWebhook($smsWebhook) {
+			$this->smsWebhook = $smsWebhook;
+		}
+
+		/**
+		 * Set SmsWebHookRate
+		 * @param type $smsWebhookRate
+		 */
+		function setSmsWebhookRate($smsWebhookRate) {
+			$this->smsWebhookRate = $smsWebhookRate;
 		}
 
 		/**
