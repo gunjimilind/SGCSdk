@@ -8,11 +8,12 @@
 
 	use SGCSdk\object\sgc_auth;
 	use SGCSdk\config\sgc_common_api_params;
+	use SGCSdk\config\sgc_user_password_api_params;
 	use SGCSdk\lib\sgc_callapi;
 	use SGCSdk\config\sgc_constant;
 	use SGCSdk\object\sgc_user;
 
-	class sgc_apikey {
+	class sgc_password {
 
 		private $auth;
 		private $user;
@@ -47,39 +48,15 @@
 			];
 		}
 
+		
 		/**
-		 * Create ApiKey
+		 * Change Password
 		 * @return type
 		 */
-		function Create() {
-			$response = new sgc_callapi(sgc_constant::SGC_API, sgc_constant::SGC_ENDPOINT_APIKEY_CREATE, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_POST, $this->useRestApi);
-			return $response->getResponse();
-		}
-
-		/**
-		 * Read ApiKey
-		 * @return type
-		 */
-		function Read() {
-			$response = new sgc_callapi(sgc_constant::SGC_API, sgc_constant::SGC_ENDPOINT_APIKEY_READ, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_GET, $this->useRestApi);
-			return $response->getResponse();
-		}
-
-		/**
-		 * Update ApiKey
-		 * @return type
-		 */
-		function Update() {
-			$response = new sgc_callapi(sgc_constant::SGC_API, sgc_constant::SGC_ENDPOINT_APIKEY_UPDATE, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_POST, $this->useRestApi);
-			return $response->getResponse();
-		}
-
-		/**
-		 * Delete ApiKey
-		 * @return type
-		 */
-		function Delete() {
-			$response = new sgc_callapi(sgc_constant::SGC_API, sgc_constant::SGC_ENDPOINT_APIKEY_DELETE, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_POST, $this->useRestApi);
+		function Change() {
+			$this->data[sgc_user_password_api_params::API_USER_PASSWORD_PARAM_NEW_PASSWORD] = $this->user->getNewPassword();
+			$this->data[sgc_user_password_api_params::API_USER_PASSWORD_PARAM_CONFIRM_PASSWORD] = $this->user->getConfirmPassword();
+			$response = new sgc_callapi(sgc_constant::SGC_API, sgc_constant::SGC_ENDPOINT_PASSWORD_CHANGE, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_POST, $this->useRestApi);
 			return $response->getResponse();
 		}
 

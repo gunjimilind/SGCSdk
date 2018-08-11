@@ -49,7 +49,7 @@
 		}
 
 		/**
-		 * Create SenderId
+		 * Create Group
 		 * @return type
 		 */
 		function Create() {
@@ -59,7 +59,7 @@
 		}
 
 		/**
-		 * Read SenderId
+		 * Read Group
 		 * @return type
 		 */
 		function Read() {
@@ -68,7 +68,7 @@
 		}
 
 		/**
-		 * Update SenderId
+		 * Update Group
 		 * @return type
 		 */
 		function Update() {
@@ -79,7 +79,7 @@
 		}
 
 		/**
-		 * Delete SenderId
+		 * Delete Group
 		 * @return type
 		 */
 		function Delete() {

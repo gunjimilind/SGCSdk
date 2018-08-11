@@ -49,7 +49,7 @@
 		}
 
 		/**
-		 * Create SenderId
+		 * Create WebHook
 		 * @return type
 		 */
 		function Create() {
@@ -60,7 +60,7 @@
 		}
 
 		/**
-		 * Read SenderId
+		 * Read WebHook
 		 * @return type
 		 */
 		function Read() {
@@ -69,7 +69,7 @@
 		}
 
 		/**
-		 * Update SenderId
+		 * Update WebHook
 		 * @return type
 		 */
 		function Update() {
@@ -80,7 +80,7 @@
 		}
 
 		/**
-		 * Delete SenderId
+		 * Delete WebHook
 		 * @return type
 		 */
 		function Delete() {

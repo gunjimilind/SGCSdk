@@ -49,7 +49,7 @@
 		}
 
 		/**
-		 * Create SenderId
+		 * Create Draft
 		 * @return type
 		 */
 		function Create() {
@@ -60,7 +60,7 @@
 		}
 
 		/**
-		 * Read SenderId
+		 * Read Draft
 		 * @return type
 		 */
 		function Read() {
@@ -69,7 +69,7 @@
 		}
 
 		/**
-		 * Update SenderId
+		 * Update Draft
 		 * @return type
 		 */
 		function Update() {
@@ -81,7 +81,7 @@
 		}
 
 		/**
-		 * Delete SenderId
+		 * Delete Draft
 		 * @return type
 		 */
 		function Delete() {

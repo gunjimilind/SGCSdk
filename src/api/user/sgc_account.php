@@ -2,7 +2,7 @@
 
 	namespace SGCSdk\api\user;
 
-defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
+	defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
 
 	/*	 * *******smsgatewaycentre******* * */
 
@@ -77,6 +77,10 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 			return $response->getResponse();
 		}
 
+		/**
+		 * Update User Profile
+		 * @return type
+		 */
 		function UpdateProfile() {
 			$this->data[sgc_user_account_api_params::API_USER_ACCOUNT_PARAM_EMAIL_ID] = $this->user->getEmail();
 			$this->data[sgc_user_account_api_params::API_USER_ACCOUNT_PARAM_CONTACT_NO] = $this->user->getMobileNo();

@@ -12,10 +12,9 @@
 		const API_USER_PASSWORD_API_NAME = "password";
 		//User Method
 		const API_USER_PASSWORD_METHOD_CHANGE = "change";
-		const API_USER_PASSWORD_METHOD_FORGOT = "forgot";
-		const API_USER_PASSWORD_METHOD_RESET = "reset";
 		//User Params
 		const API_USER_PASSWORD_PARAM_NEW_PASSWORD = "newpassword";
+		const API_USER_PASSWORD_PARAM_CONFIRM_PASSWORD = "confirmpassword";
 		
 	}
 	

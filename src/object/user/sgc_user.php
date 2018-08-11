@@ -25,6 +25,7 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		private $draftTitle;
 		private $draftContent;
 		private $newPassword;
+		private $confirmPassword;
 		private $senderId;
 		private $smsWebhook;
 		private $smsWebhookRate;
@@ -174,6 +175,14 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		 */
 		function getNewPassword() {
 			return $this->newPassword;
+		}
+		
+		/**
+		 * ConfirmPassword
+		 * @return type
+		 */
+		function getConfirmPassword() {
+			return $this->confirmPassword;
 		}
 
 		/**
@@ -366,6 +375,14 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 
 		function setNewPassword($newPassword) {
 			$this->newPassword = $newPassword;
+		}
+		
+		/*
+		 * Set ConfirmPassword
+		 */
+
+		function setConfirmPassword($confirmPassword) {
+			$this->confirmPassword = $confirmPassword;
 		}
 
 		/**

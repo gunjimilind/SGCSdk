@@ -49,7 +49,7 @@
 		}
 
 		/**
-		 * Create SenderId
+		 * Create Contact
 		 * @return type
 		 */
 		function Create() {
@@ -62,7 +62,7 @@
 		}
 
 		/**
-		 * Read SenderId
+		 * Read Contact
 		 * @return type
 		 */
 		function Read() {
@@ -71,7 +71,7 @@
 		}
 
 		/**
-		 * Update SenderId
+		 * Update Contact
 		 * @return type
 		 */
 		function Update() {
@@ -85,7 +85,7 @@
 		}
 
 		/**
-		 * Delete SenderId
+		 * Delete Contact
 		 * @return type
 		 */
 		function Delete() {
