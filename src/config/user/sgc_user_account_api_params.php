@@ -1,8 +1,8 @@
 <?php
-	
+
 	namespace SGCSdk\config;
 
-	defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
+defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
 
 	/*	 * *******smsgatewaycentre******* * */
 
@@ -25,6 +25,7 @@
 		const API_USER_ACCOUNT_PARAM_CITY = "city";
 		const API_USER_ACCOUNT_PARAM_FROM_DATE = "fromdate";
 		const API_USER_ACCOUNT_PARAM_TO_DATE = "todate";
+		const API_USER_ACCOUNT_PARAM_PROFILE_IMAGE = "profilepic";
 
 	}
 	

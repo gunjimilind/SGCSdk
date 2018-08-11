@@ -31,6 +31,7 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		private $uuId;
 		private $output;
 		private $id;
+		private $profilePic;
 
 		/**
 		 * Main Constructor
@@ -224,6 +225,14 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		}
 
 		/**
+		 * Profile Pic
+		 * @return type
+		 */
+		function getProfilePic() {
+			return $this->profilePic;
+		}
+
+		/**
 		 * Set Email
 		 * @param type $email
 		 */
@@ -405,6 +414,14 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		 */
 		function setId($id) {
 			$this->id = $id;
+		}
+
+		/**
+		 * Set ProfilePic
+		 * @param type $profilePic
+		 */
+		function setProfilePic($profilePic) {
+			$this->profilePic = $profilePic;
 		}
 
 	}
