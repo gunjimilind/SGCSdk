@@ -14,7 +14,7 @@
 		const API_RESELLER_USER_METHOD_CREATE_USER = "createuser";
 		const API_RESELLER_USER_METHOD_UPDATE_USER = "updateuser";
 		const API_RESELLER_USER_METHOD_READ_USER = "readuser";
-		const API_RESELLER_USER_METHOD_CHANGE_USER_PASSWORD = "changeuserpassword";
+		const API_RESELLER_USER_METHOD_GENERATE_USER_PASSWORD = "generateuserpassword";
 		const API_RESELLER_USER_METHOD_RESET_USER_PASSWORD = "resetuserpassword";
 		//User Params
 		const API_RESELLER_USER_PARAM_USER_TYPE = "type";

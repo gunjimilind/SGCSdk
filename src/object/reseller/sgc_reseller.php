@@ -24,6 +24,10 @@
 		private $notifyUser;
 		private $city;
 		private $output;
+		private $domainName;
+		private $expiryDate;
+		private $enableCMS;
+		private $userStatus;
 
 		/**
 		 * Main Constructor
@@ -32,6 +36,23 @@
 			
 		}
 
+		/**
+		 * User Status
+		 * @return type
+		 */
+		function getUserStatus() {
+			return $this->userStatus;
+		}
+
+		/**
+		 * Set UserStatus
+		 * @param type $userStatus
+		 */
+		function setUserStatus($userStatus) {
+			$this->userStatus = $userStatus;
+		}
+
+				
 		/**
 		 * Credit
 		 * @return type
@@ -161,6 +182,30 @@
 		}
 
 		/**
+		 * Domain Name
+		 * @return type
+		 */
+		function getDomainName() {
+			return $this->domainName;
+		}
+
+		/**
+		 * Expiry Date
+		 * @return type
+		 */
+		function getExpiryDate() {
+			return $this->expiryDate;
+		}
+
+		/**
+		 * Enable CMS
+		 * @return type
+		 */
+		function getEnableCMS() {
+			return $this->enableCMS;
+		}
+
+		/**
 		 * Set Credit
 		 * @param type $credit
 		 */
@@ -286,6 +331,30 @@
 		 */
 		function setOutput($output) {
 			$this->output = $output;
+		}
+
+		/**
+		 * Set Domain Name
+		 * @param type $domainName
+		 */
+		function setDomainName($domainName) {
+			$this->domainName = $domainName;
+		}
+
+		/**
+		 * Set Expiry Date
+		 * @param type $expiryDate
+		 */
+		function setExpiryDate($expiryDate) {
+			$this->expiryDate = $expiryDate;
+		}
+
+		/**
+		 * Set Enable CMS
+		 * @param type $enableCMS
+		 */
+		function setEnableCMS($enableCMS) {
+			$this->enableCMS = $enableCMS;
 		}
 
 	}

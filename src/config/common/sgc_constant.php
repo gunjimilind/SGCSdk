@@ -82,7 +82,7 @@
 		const SGC_ENDPOINT_RESELLER_CREATE_USER = "/reseller/createuser";
 		const SGC_ENDPOINT_RESELLER_UPDATE_USER = "/reseller/updateuser";	
 		const SGC_ENDPOINT_RESELLER_READ_USER = "/reseller/readuser";	
-		const SGC_ENDPOINT_RESELLER_CHANGE_USER_PASSWORD = "/reseller/changeuserpassword";	
+		const SGC_ENDPOINT_RESELLER_GENERATE_USER_PASSWORD = "/reseller/generateuserpassword";	
 		const SGC_ENDPOINT_RESELLER_RESET_USER_PASSWORD = "/reseller/resetuserpassword";	
 		
 		//RESELLER CREDIT MANAGEMENT API ENDPOINTS
