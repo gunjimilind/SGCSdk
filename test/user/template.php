@@ -17,33 +17,30 @@
 	$User->setOutput("json");
 
 	//INITIATE HANDLE
-	$request = new \SGCSdk\api\user\sgc_senderid($Auth, $User);
+	$request = new \SGCSdk\api\user\sgc_template($Auth, $User);
 
 	//If you want to use true rest api like DELETE, PATCH, POST , GET
 	$request->useRestApi(true);
 
-	//Create SenderId
-	$User->setSenderId("TESTIN");
-	echo "Create SenderId: " . $request->Create();
+	//Create Template
+	$User->setMessage("Hello this is test");
+	echo "Create Template: " . $request->Create();
 	echo "<br />";
 	echo "<br />";
 
-	//Read SenderId list
-	echo "Read SenderId: " . $request->Read();
-	echo "<pre>";
-	print_r(json_decode($request->Read())->response->senderidList);
-	echo "<pre>";
+	//Read Template list
+	echo "Read Template: " . $request->Read();
 	echo "<br />";
 	echo "<br />";
 
-	//Update SenderId
-	$User->setSenderId("MILIND");
-	$User->setId(33);
-	echo "Update SenderId: " . $request->Update();
+	//Update Template
+	$User->setMessage("Updated message");
+	$User->setId(3);
+	echo "Update Template: " . $request->Update();
 	echo "<br />";
 	echo "<br />";
 
-	//Delete SenderId
-	$User->setId(33);
-	echo "Delete SenderId: " . $request->Delete();
+	//Delete Template
+	$User->setId(3);
+	echo "Delete Template: " . $request->Delete();
 	

@@ -17,6 +17,12 @@
 		const SGC_ENDPOINT_SENDER_ID_UPDATE = "/senderid/update";
 		const SGC_ENDPOINT_SENDER_ID_DELETE = "/senderid/delete";
 		
+		//TEMPLATE API ENDPOINTS
+		const SGC_ENDPOINT_TEMPLATE_CREATE = "/template/create";
+		const SGC_ENDPOINT_TEMPLATE_READ = "/template/read";
+		const SGC_ENDPOINT_TEMPLATE_UPDATE = "/template/update";
+		const SGC_ENDPOINT_TEMPLATE_DELETE = "/template/delete";
+		
 		//DRAFT API ENDPOINTS
 		const SGC_ENDPOINT_DRAFT_CREATE = "/draft/create";
 		const SGC_ENDPOINT_DRAFT_READ = "/draft/read";
