@@ -2,7 +2,7 @@
 
 	namespace SGCSdk\object;
 
-	defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
+defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
 
 	/*	 * *******smsgatewaycentre******* * */
 
@@ -21,6 +21,7 @@
 		private $testMessage;
 		private $file;
 		private $output;
+		private $uuId;
 
 		/**
 		 * Main Constructor
@@ -134,6 +135,14 @@
 		}
 
 		/**
+		 * UuId
+		 * @return type
+		 */
+		function getUuId() {
+			return $this->uuId;
+		}
+
+		/**
 		 * Set Text
 		 * @param type $text
 		 */
@@ -235,6 +244,14 @@
 		 */
 		function setOutput($output) {
 			$this->output = $output;
+		}
+
+		/**
+		 * Set UuId
+		 * @param type $uuId
+		 */
+		function setUuId($uuId) {
+			$this->uuId = $uuId;
 		}
 
 	}

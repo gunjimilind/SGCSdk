@@ -71,7 +71,8 @@
 		
 		//SCHEDULE API ENDPOINTS
 		const SGC_ENDPOINT_SCHEDULE_READ = "/schedule/read";
-		const SGC_ENDPOINT_SCHEDULE_CANCEL = "/schedule/cancel";	
+		const SGC_ENDPOINT_SCHEDULE_UPDATE = "/schedule/update";
+		const SGC_ENDPOINT_SCHEDULE_DELETE = "/schedule/delete";	
 		
 		//SCHEDULE API ENDPOINTS
 		const SGC_ENDPOINT_REPORT_GETSTATUS = "/report/status";
