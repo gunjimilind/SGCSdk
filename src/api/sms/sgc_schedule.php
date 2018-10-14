@@ -55,6 +55,7 @@
 		function Read() {
 			$this->data[sgc_sms_schedule_api_params::API_SMS_SCHEDULE_PARAM_FROM_DATE] = $this->sms->getFromDate();
 			$this->data[sgc_sms_schedule_api_params::API_SMS_SCHEDULE_PARAM_TO_DATE] = $this->sms->getToDate();
+			$this->data[sgc_sms_schedule_api_params::API_SMS_SCHEDULE_PARAM_UUID] = $this->sms->getUuId();
 			$response = new sgc_callapi(sgc_constant::SGC_API, sgc_constant::SGC_ENDPOINT_SCHEDULE_READ, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_GET, $this->useRestApi);
 			return $response->getResponse();
 		}
