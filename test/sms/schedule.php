@@ -23,12 +23,14 @@
 	$request->useRestApi(true);
 
 	//Read Schedule list
-	$Sms->setFromDate("2018-10-01");
-	$Sms->setToDate("2018-10-30");
+	//$Sms->setFromDate("2018-10-01");
+	//$Sms->setToDate("2018-10-30");
+	$Sms->setUuId("1212345432");
 	echo "Read Schedule: " . $request->Read();
 	echo "<br />";
 	echo "<br />";
 
+	exit;
 	//Update Schedule
 	$Sms->setScheduleTime("2019-01-01 00:00:00");
 	$Sms->setUuId("121234542132");
