@@ -10,7 +10,7 @@
 	//SET AUTH
 	$Auth = new \SGCSdk\object\sgc_auth();
 	$Auth->setUsername("admin");
-	$Auth->setPassword("admin123");
+	$Auth->setPassword("Admin@123");
 
 	//SET PARAMS
 	$User = new \SGCSdk\object\sgc_user();
@@ -23,7 +23,7 @@
 	$request->useRestApi(true);
 
 	//Create Contact
-	$User->setGroupId(7);
+	$User->setGroupId(20);
 	$User->setContactName("Milind");
 	$User->setMobileNo("911234567890");
 	echo "Create Contact: " . $request->Create();
@@ -46,6 +46,6 @@
 	echo "<br />";
 
 	//Delete Contact
-	$User->setId(3);
+	$User->setContactId(28);
 	echo "Delete Contact: " . $request->Delete();
 	
