@@ -11,7 +11,7 @@
 	$Auth = new \SGCSdk\object\sgc_auth();
 	$Auth->setUsername("admin");
 	$Auth->setPassword("Admin@123");
-
+	
 	//SET PARAMS
 	$Sms = new \SGCSdk\object\sgc_sms();
 	$Sms->setOutput("json");
@@ -56,4 +56,3 @@
 	$Sms->setDuplicateCheck("true");
 
 	echo $request->file();
-	

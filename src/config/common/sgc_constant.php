@@ -9,7 +9,7 @@
 	class sgc_constant {
 
 		//SGC API LINK
-		const SGC_API = "http://localhost/project/api";
+		const SGC_API = "http://localhost/smpp/api";
 		
 		//SENDERID API ENDPOINTS
 		const SGC_ENDPOINT_SENDER_ID_CREATE = "/senderid/create";

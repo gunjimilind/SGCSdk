@@ -17,6 +17,7 @@
 		const API_COMMON_PARAM_USERID = "userid";
 		const API_COMMON_PARAM_PASSWORD = "password";
 		const API_COMMON_PARAM_API_KEY = "apikey";
+		const API_COMMON_PARAM_ADMIN_KEY = "adminkey";
 		const API_COMMON_PARAM_OUTPUT_FORMAT = "output";
 		const API_COMMON_PARAM_UUID = "uuid";
 		const API_COMMON_PARAM_ID = "id";

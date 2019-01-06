@@ -38,7 +38,8 @@
 			$this->auth = $auth;
 			$this->sms = $sms;
 			$this->header = [
-				sgc_common_api_params::API_COMMON_PARAM_API_KEY => $this->auth->getApiKey()
+				sgc_common_api_params::API_COMMON_PARAM_API_KEY => $this->auth->getApiKey(),
+				sgc_common_api_params::API_COMMON_PARAM_ADMIN_KEY => $this->auth->getAdminKey()
 			];
 
 			$this->data = [

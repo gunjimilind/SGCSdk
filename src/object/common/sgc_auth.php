@@ -11,6 +11,7 @@
 		private $username;
 		private $password;
 		private $apiKey;
+		private $adminKey;
 
 		/**
 		 * Main Constructor
@@ -42,6 +43,14 @@
 		function getApiKey() {
 			return $this->apiKey;
 		}
+		
+		/**
+		 * AdminKey
+		 * @return type
+		 */
+		function getAdminKey() {
+			return $this->adminKey;
+		}
 
 		/**
 		 * Set UserName
@@ -65,6 +74,14 @@
 		 */
 		function setApiKey($apiKey) {
 			$this->apiKey = $apiKey;
+		}
+		
+		/**
+		 * Set AdminKey
+		 * @param type $AdminKey
+		 */
+		function setAdminKey($adminKey) {
+			$this->adminKey = $adminKey;
 		}
 
 	}
