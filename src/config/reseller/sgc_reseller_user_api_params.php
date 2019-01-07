@@ -17,8 +17,8 @@
 		const API_RESELLER_USER_METHOD_GENERATE_USER_PASSWORD = "generateuserpassword";
 		const API_RESELLER_USER_METHOD_RESET_USER_PASSWORD = "resetuserpassword";
 		//User Params
-		const API_RESELLER_USER_PARAM_USER_TYPE = "type";
-		const API_RESELLER_USER_PARAM_USERNAME = "username";
+		const API_RESELLER_USER_PARAM_USER_TYPE = "usertype";
+		const API_RESELLER_USER_PARAM_USERNAME = "userloginname";
 		const API_RESELLER_USER_PARAM_EMAIL_ID = "email";
 		const API_RESELLER_USER_PARAM_CONTACT_NO = "mobileno";
 		const API_RESELLER_USER_PARAM_FULL_NAME = "fullname";

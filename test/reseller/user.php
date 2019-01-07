@@ -22,4 +22,17 @@
 	//If you want to use true rest api like DELETE, PATCH, POST , GET
 	$request->useRestApi(true);
 
+	$Reseller->setUserType("customer");
+	$Reseller->setUserLoginName("12343w");
+	$Reseller->setEmailId("testing@test.com");
+	$Reseller->setMobileNo("765676567");
+	$Reseller->setFullName("MILND");
+	$Reseller->setAddress("Karnat asd asd  asd  asd a sd  asd aka");
+	$Reseller->setCountry("India");
+	$Reseller->setRegion("Maharashtra");
+	$Reseller->setCity("Mumbai");
+	$Reseller->setDomainName("http://xyzz.cim");
+	$Reseller->setExpiryDate("2019-01-20");
+	$Reseller->setEnableCMS("false");
 	echo $request->CreateUser();
+	
