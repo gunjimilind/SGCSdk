@@ -34,6 +34,7 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		private $id;
 		private $profilePic;
 		private $message;
+		private $domainName;
 
 		/**
 		 * Main Constructor
@@ -177,7 +178,7 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		function getNewPassword() {
 			return $this->newPassword;
 		}
-		
+
 		/**
 		 * ConfirmPassword
 		 * @return type
@@ -241,13 +242,21 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		function getProfilePic() {
 			return $this->profilePic;
 		}
-		
+
 		/**
-		 * Messagec
+		 * Message
 		 * @return type
 		 */
 		function getMessage() {
 			return $this->message;
+		}
+
+		/**
+		 * DomainName
+		 * @return type
+		 */
+		function getDomainName() {
+			return $this->domainName;
 		}
 
 		/**
@@ -385,7 +394,7 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		function setNewPassword($newPassword) {
 			$this->newPassword = $newPassword;
 		}
-		
+
 		/*
 		 * Set ConfirmPassword
 		 */
@@ -449,13 +458,21 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		function setProfilePic($profilePic) {
 			$this->profilePic = $profilePic;
 		}
-		
+
 		/**
 		 * Set Message
 		 * @param type $Message
 		 */
 		function setMessage($message) {
 			$this->message = $message;
+		}
+
+		/**
+		 * Set DomainName
+		 * @param type $DomainName
+		 */
+		function setDomainName($domainName) {
+			$this->domainName = $domainName;
 		}
 
 	}
