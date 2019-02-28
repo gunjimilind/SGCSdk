@@ -11,18 +11,18 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		//API NAME
 		const API_SMS_SEND_API_NAME = "send";
 		//Send Method Values
-		const API_SMS_SEND_METHOD_BATCH = "batch";
-		const API_SMS_SEND_METHOD_PHONEBOOK = "phonebook";
-		const API_SMS_SEND_METHOD_FILE_UPLOAD = "file";
+		const API_SMS_SEND_METHOD_BATCH = "simple";
+		const API_SMS_SEND_METHOD_PHONEBOOK = "group";
+		const API_SMS_SEND_METHOD_FILE_UPLOAD = "bulk";
 		//Send Method Params
-		const API_SMS_SEND_PARAM_MOBILE = "phone";
+		const API_SMS_SEND_PARAM_MOBILE = "mobile";
 		const API_SMS_SEND_PARAM_MESSAGE_TEXT = "text";
 		const API_SMS_SEND_PARAM_MESSAGE_TYPE = "type";
-		const API_SMS_SEND_PARAM_SCHEDULE_TIME = "time";
-		const API_SMS_SEND_PARAM_SENDER_ID = "senderid";
-		const API_SMS_SEND_PARAM_TEST_MESSAGE = "test";
+		const API_SMS_SEND_PARAM_SCHEDULE_TIME = "timestamp";
+		const API_SMS_SEND_PARAM_SENDER_ID = "senderId";
+		const API_SMS_SEND_PARAM_TEST_MESSAGE = "testMsg";
 		const API_SMS_SEND_PARAM_GROUP_NAME = "group";
-		const API_SMS_SEND_PARAM_DUPLICATE_CHECK = "duplicatecheck";
+		const API_SMS_SEND_PARAM_DUPLICATE_CHECK = "duplicateCheck";
 		const API_SMS_SEND_PARAM_FILE_NAME = "file";
 		const API_SMS_SEND_FILE_ALLOWED_EXTENSION = array(
 			"xls",
