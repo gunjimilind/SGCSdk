@@ -29,7 +29,6 @@
 		const API_RESELLER_USER_PARAM_USER_STATUS = "userstatus";
 		const API_RESELLER_USER_PARAM_EXPIRY_DATE = "expirydate";
 		const API_RESELLER_USER_PARAM_ENABLE_CMS = "enablecms";
-		const API_RESELLER_USER_PARAM_USER_STATUS = "userstatus";
 		const API_RESELLER_USER_PARAM_NEW_PASSWORD = "newpassword";
 		const API_RESELLER_USER_PARAM_NOTIFY_USER = "notifyuser";
 		const API_RESELLER_USER_PARAM_CITY = "city";
