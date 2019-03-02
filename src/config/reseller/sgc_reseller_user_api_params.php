@@ -26,6 +26,7 @@
 		const API_RESELLER_USER_PARAM_REGION = "region";
 		const API_RESELLER_USER_PARAM_COUNTRY = "country";
 		const API_RESELLER_USER_PARAM_DOMAIN_NAME = "domainname";
+		const API_RESELLER_USER_PARAM_USER_STATUS = "userstatus";
 		const API_RESELLER_USER_PARAM_EXPIRY_DATE = "expirydate";
 		const API_RESELLER_USER_PARAM_ENABLE_CMS = "enablecms";
 		const API_RESELLER_USER_PARAM_USER_STATUS = "userstatus";
