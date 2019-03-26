@@ -22,6 +22,7 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		private $file;
 		private $output;
 		private $uuId;
+		private $campaignId;
 
 		/**
 		 * Main Constructor
@@ -143,6 +144,14 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		}
 
 		/**
+		 * CampaignId
+		 * @return type
+		 */
+		function getCampaignId() {
+			return $this->campaignId;
+		}
+
+		/**
 		 * Set Text
 		 * @param type $text
 		 */
@@ -252,6 +261,14 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		 */
 		function setUuId($uuId) {
 			$this->uuId = $uuId;
+		}
+
+		/**
+		 * Set CampaignId
+		 * @param type $campaignId
+		 */
+		function setCampaignId($campaignId) {
+			$this->campaignId = $campaignId;
 		}
 
 	}

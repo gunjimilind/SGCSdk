@@ -72,9 +72,14 @@
 		//SCHEDULE API ENDPOINTS
 		const SGC_ENDPOINT_SCHEDULE_READ = "/schedule/read";
 		const SGC_ENDPOINT_SCHEDULE_UPDATE = "/schedule/update";
-		const SGC_ENDPOINT_SCHEDULE_DELETE = "/schedule/delete";	
+		const SGC_ENDPOINT_SCHEDULE_DELETE = "/schedule/delete";
 		
-		//SCHEDULE API ENDPOINTS
+		//CAMPAIGN API ENDPOINTS
+		const SGC_ENDPOINT_CAMPAIGN_READ = "/campaign/read";
+		const SGC_ENDPOINT_CAMPAIGN_UPDATE = "/campaign/update";
+		const SGC_ENDPOINT_CAMPAIGN_DELETE = "/campaign/delete";
+		
+		//REPORT API ENDPOINTS
 		const SGC_ENDPOINT_REPORT_GETSTATUS = "/report/status";
 		const SGC_ENDPOINT_REPORT_GET = "/report/day";	
 		const SGC_ENDPOINT_REPORT_SUMMARY = "/report/summary";	
