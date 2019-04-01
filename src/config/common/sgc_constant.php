@@ -79,6 +79,11 @@
 		const SGC_ENDPOINT_CAMPAIGN_UPDATE = "/campaign/update";
 		const SGC_ENDPOINT_CAMPAIGN_DELETE = "/campaign/delete";
 		
+		//CAMPAIGN API ENDPOINTS
+		const SGC_ENDPOINT_LINKTRACK_CREATE = "/linktrack/create";
+		const SGC_ENDPOINT_LINKTRACK_READ = "/linktrack/read";
+		const SGC_ENDPOINT_LINKTRACK_DELETE = "/linktrack/delete";
+		
 		//REPORT API ENDPOINTS
 		const SGC_ENDPOINT_REPORT_GETSTATUS = "/report/status";
 		const SGC_ENDPOINT_REPORT_GET = "/report/day";	

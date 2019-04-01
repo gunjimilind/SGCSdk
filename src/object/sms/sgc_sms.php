@@ -23,6 +23,11 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		private $output;
 		private $uuId;
 		private $campaignId;
+		private $longUrl;
+		private $attachment;
+		private $type;
+		private $identifier;
+		private $id;
 
 		/**
 		 * Main Constructor
@@ -152,6 +157,46 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		}
 
 		/**
+		 * LongUrl
+		 * @return type
+		 */
+		function getLongUrl() {
+			return $this->longUrl;
+		}
+
+		/**
+		 * Attachment
+		 * @return type
+		 */
+		function getAttachment() {
+			return $this->attachment;
+		}
+
+		/**
+		 * Type
+		 * @return type
+		 */
+		function getType() {
+			return $this->type;
+		}
+
+		/**
+		 * Type
+		 * @return identifier
+		 */
+		function getIdentifer() {
+			return $this->identifier;
+		}
+		
+		/**
+		 * Type
+		 * @return id
+		 */
+		function getId() {
+			return $this->id;
+		}
+
+		/**
 		 * Set Text
 		 * @param type $text
 		 */
@@ -269,6 +314,46 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		 */
 		function setCampaignId($campaignId) {
 			$this->campaignId = $campaignId;
+		}
+
+		/**
+		 * Set LongUrl
+		 * @param type $longUrl
+		 */
+		function setLongUrl($longUrl) {
+			$this->longUrl = $longUrl;
+		}
+
+		/**
+		 * Set Attachment
+		 * @param type $attachment
+		 */
+		function setAttachment($attachment) {
+			$this->attachment = $attachment;
+		}
+
+		/**
+		 * Set Type
+		 * @param type $type
+		 */
+		function setType($type) {
+			$this->type = $type;
+		}
+		
+		/**
+		 * Set Identifier
+		 * @param type $identifier
+		 */
+		function setIdentifier($identifier) {
+			$this->identifier = $identifier;
+		}
+		
+		/**
+		 * Set Id
+		 * @param type $id
+		 */
+		function setId($id) {
+			$this->id = $id;
 		}
 
 	}
