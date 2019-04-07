@@ -67,6 +67,8 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		 */
 		function AddCredit() {
 			$this->data[sgc_reseller_credit_management_api_params::API_RESELLER_CREDIT_MANAGEMENT_CREDIT] = $this->reseller->getCredit();
+			$this->data[sgc_reseller_credit_management_api_params::API_RESELLER_CREDIT_MANAGEMENT_PRODUCT] = $this->reseller->getProduct();
+			$this->data[sgc_reseller_credit_management_api_params::API_RESELLER_CREDIT_MANAGEMENT_TRANSACTION_TYPE] = $this->reseller->getTransactionType();
 			$this->data[sgc_reseller_credit_management_api_params::API_RESELLER_CREDIT_MANAGEMENT_COMMENT] = $this->reseller->getComment();
 			$this->data[sgc_reseller_credit_management_api_params::API_RESELLER_CREDIT_MANAGEMENT_USER_LOGIN_NAME] = $this->reseller->getUserLoginName();
 			$response = new sgc_callapi(sgc_constant::SGC_API, sgc_constant::SGC_ENDPOINT_RESELLER_ADD_CREDIT, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_POST, $this->useRestApi);
@@ -80,6 +82,8 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		function RemoveCredit() {
 			$this->data[sgc_reseller_credit_management_api_params::API_RESELLER_CREDIT_MANAGEMENT_CREDIT] = $this->reseller->getCredit();
 			$this->data[sgc_reseller_credit_management_api_params::API_RESELLER_CREDIT_MANAGEMENT_COMMENT] = $this->reseller->getComment();
+			$this->data[sgc_reseller_credit_management_api_params::API_RESELLER_CREDIT_MANAGEMENT_PRODUCT] = $this->reseller->getProduct();
+			$this->data[sgc_reseller_credit_management_api_params::API_RESELLER_CREDIT_MANAGEMENT_TRANSACTION_TYPE] = $this->reseller->getTransactionType();
 			$this->data[sgc_reseller_credit_management_api_params::API_RESELLER_CREDIT_MANAGEMENT_USER_LOGIN_NAME] = $this->reseller->getUserLoginName();
 			$response = new sgc_callapi(sgc_constant::SGC_API, sgc_constant::SGC_ENDPOINT_RESELLER_REMOVE_CREDIT, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_POST, $this->useRestApi);
 			return $response->getResponse();

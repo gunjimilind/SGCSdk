@@ -1,8 +1,8 @@
 <?php
 
 	namespace SGCSdk\config;
-	
-	defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
+
+defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
 
 	/*	 * *******smsgatewaycentre******* * */
 
@@ -16,10 +16,12 @@
 		const API_RESELLER_CREDIT_MANAGEMENT_METHOD_READ_CREDIT_HISTORY = "readcredithistory";
 		//User Params
 		const API_RESELLER_CREDIT_MANAGEMENT_CREDIT = "credits";
+		const API_RESELLER_CREDIT_MANAGEMENT_PRODUCT = "product";
+		const API_RESELLER_CREDIT_MANAGEMENT_TRANSACTION_TYPE = "transactiontype";
 		const API_RESELLER_CREDIT_MANAGEMENT_COMMENT = "comment";
 		const API_RESELLER_CREDIT_MANAGEMENT_USER_LOGIN_NAME = "userloginname";
 		const API_RESELLER_CREDIT_MANAGEMENT_FROM_DATE = "fromdate";
 		const API_RESELLER_CREDIT_MANAGEMENT_TO_DATE = "todate";
-		
+
 	}
 	

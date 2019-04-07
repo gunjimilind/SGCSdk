@@ -2,7 +2,7 @@
 
 	namespace SGCSdk\object;
 
-	defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
+defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
 
 	/*	 * *******smsgatewaycentre******* * */
 
@@ -28,6 +28,40 @@
 		private $expiryDate;
 		private $enableCMS;
 		private $userStatus;
+		private $product;
+		private $transactionType;
+
+		/**
+		 * User Product
+		 * @return type
+		 */
+		function getProduct() {
+			return $this->product;
+		}
+
+		/**
+		 * User TransactionType
+		 * @return type
+		 */
+		function getTransactionType() {
+			return $this->transactionType;
+		}
+
+		/**
+		 * Set Product
+		 * @param type $product
+		 */
+		function setProduct($product) {
+			$this->product = $product;
+		}
+
+		/**
+		 * Set TransactionType
+		 * @param type $transactionType
+		 */
+		function setTransactionType($transactionType) {
+			$this->transactionType = $transactionType;
+		}
 
 		/**
 		 * Main Constructor
@@ -52,7 +86,6 @@
 			$this->userStatus = $userStatus;
 		}
 
-				
 		/**
 		 * Credit
 		 * @return type
