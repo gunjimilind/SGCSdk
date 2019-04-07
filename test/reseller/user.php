@@ -17,7 +17,7 @@
 	$Reseller->setOutput("json");
 
 	//INITIATE HANDLE
-	$request = new \SGCSdk\api\reseller\sgc_user();
+	$request = new \SGCSdk\api\reseller\sgc_user($Auth,$Reseller);
 
 	//If you want to use true rest api like DELETE, PATCH, POST , GET
 	$request->useRestApi(true);

@@ -82,7 +82,20 @@
 					$this->response = $e->getResponse();
 					$this->response = 500;
 				}
-			}
+			}else if ($method == 'FILE') {
+				try {
+					$response = $client->request('POST', $api . $endpoint, [
+						'multipart' => $data,
+						'headers' => $header
+					]);
+
+					$this->response = $response->getBody();
+					$this->statusCode = $response->getStatusCode();
+				} catch (\GuzzleHttp\Exception\RequestException $e) {
+					$this->response = $e->getResponse();
+					$this->response = 500;
+				}
+			} 
 		}
 
 	}

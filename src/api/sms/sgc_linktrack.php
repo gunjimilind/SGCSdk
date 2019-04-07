@@ -2,7 +2,7 @@
 
 	namespace SGCSdk\api\sms;
 
-	defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
+defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
 
 	/*	 * *******smsgatewaycentre******* * */
 
@@ -54,14 +54,19 @@
 		 * @return type
 		 */
 		function Create() {
-			$this->data[sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_IDENTIFIER] = $this->sms->getIdentifer();
-			$this->data[sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_LONG_URL] = $this->sms->getLongUrl();
-			$this->data[sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_TYPE] = $this->sms->getType();
-			$this->data[sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_ATTACHMENT] = $this->sms->getAttachment();
-			$response = new sgc_callapi(sgc_constant::SGC_API, sgc_constant::SGC_ENDPOINT_LINKTRACK_CREATE, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_POST, $this->useRestApi);
+			$Array = array();
+			foreach ($this->data as $name => $contents) {
+				array_push($Array, array("name" => $name, "contents" => $contents));
+			}
+
+			array_push($Array, array("name" => sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_IDENTIFIER, "contents" => $this->sms->getIdentifer()));
+			array_push($Array, array("name" => sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_LONG_URL, "contents" => $this->sms->getLongUrl()));
+			array_push($Array, array("name" => sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_TYPE, "contents" => $this->sms->getType()));
+			array_push($Array, array("name" => sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_ATTACHMENT, "contents" => fopen($this->sms->getAttachment(), 'r')));
+			$response = new sgc_callapi(sgc_constant::SGC_API, sgc_constant::SGC_ENDPOINT_LINKTRACK_CREATE, $Array, $this->header, sgc_common_api_params::API_COMMON_METHOD_FILE, $this->useRestApi);
 			return $response->getResponse();
 		}
-		
+
 		/**
 		 * Read SenderId
 		 * @return type

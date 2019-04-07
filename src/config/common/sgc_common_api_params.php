@@ -29,6 +29,7 @@
 		//Method
 		const API_COMMON_METHOD_GET = "GET";
 		const API_COMMON_METHOD_POST = "POST";
+		const API_COMMON_METHOD_FILE = "FILE";
 		
 		//Response 
 		const API_COMMON_OUTPUT_TEXT_RESPONSE_SEPERATOR = " | ";

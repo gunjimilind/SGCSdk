@@ -9,8 +9,8 @@
 
 	//SET AUTH
 	$Auth = new \SGCSdk\object\sgc_auth();
-	$Auth->setUsername("userAdmin");
-	$Auth->setPassword("Admin1234?");
+	$Auth->setUsername("admin");
+	$Auth->setPassword("Admin@123");
 
 	//SET PARAMS
 	$Sms = new \SGCSdk\object\sgc_sms();
@@ -21,11 +21,12 @@
 
 	//If you want to use true rest api like DELETE, PATCH, POST , GET
 	$request->useRestApi(true);
-
+	//echo $request->Read();
 	//Read Schedule list
 	$Sms->setIdentifier("Hello World");
-	$Sms->setLongUrl("http://smppcenter.com");
-	$Sms->setType("url");
+	//$Sms->setLongUrl("http://smppcenter.com");
+	$Sms->setType("attachment");
+	$Sms->setAttachment("/vaoads/5ca9e8f9efaad.jpg");
 	echo $request->Create();
 	exit;
 	//Update Schedule
