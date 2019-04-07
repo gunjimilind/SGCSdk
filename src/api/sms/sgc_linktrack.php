@@ -62,7 +62,9 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 			array_push($Array, array("name" => sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_IDENTIFIER, "contents" => $this->sms->getIdentifer()));
 			array_push($Array, array("name" => sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_LONG_URL, "contents" => $this->sms->getLongUrl()));
 			array_push($Array, array("name" => sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_TYPE, "contents" => $this->sms->getType()));
-			array_push($Array, array("name" => sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_ATTACHMENT, "contents" => fopen($this->sms->getAttachment(), 'r')));
+			if ($this->sms->getAttachment() != "") {
+				array_push($Array, array("name" => sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_ATTACHMENT, "contents" => fopen($this->sms->getAttachment(), 'r')));
+			}
 			$response = new sgc_callapi(sgc_constant::SGC_API, sgc_constant::SGC_ENDPOINT_LINKTRACK_CREATE, $Array, $this->header, sgc_common_api_params::API_COMMON_METHOD_FILE, $this->useRestApi);
 			return $response->getResponse();
 		}
