@@ -75,6 +75,7 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		 */
 		function Read() {
 			$this->data[sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_LINK_ID] = $this->sms->getId();
+			$this->data[sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_TYPE] = $this->sms->getType();
 			$response = new sgc_callapi(sgc_constant::SGC_API, sgc_constant::SGC_ENDPOINT_LINKTRACK_READ, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_POST, $this->useRestApi);
 			return $response->getResponse();
 		}
