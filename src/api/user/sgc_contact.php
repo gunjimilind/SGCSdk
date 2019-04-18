@@ -67,6 +67,8 @@
 		 * @return type
 		 */
 		function Read() {
+			$this->data[sgc_user_contact_api_params::API_USER_CONTACT_PARAM_GROUP_NAME] = $this->user->getGroupName();
+			$this->data[sgc_user_contact_api_params::API_USER_CONTACT_PARAM_GROUP_ID] = $this->user->getGroupId();
 			$response = new sgc_callapi(sgc_constant::SGC_API, sgc_constant::SGC_ENDPOINT_CONTACT_READ, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_GET, $this->useRestApi);
 			return $response->getResponse();
 		}
