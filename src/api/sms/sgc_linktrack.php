@@ -81,6 +81,18 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		}
 
 		/**
+		 * Report
+		 * @return type
+		 */
+		function Report() {
+			$this->data[sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_CAMPAIGN_ID] = $this->sms->getCampaignId();
+			$this->data[sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_FROM_DATE] = $this->sms->getFromDate();
+			$this->data[sgc_sms_linktrack_api_params::API_SMS_LINKTRACK_PARAM_TO_DATE] = $this->sms->getToDate();
+			$response = new sgc_callapi(sgc_constant::SGC_API, sgc_constant::SGC_ENDPOINT_LINKTRACK_REPORT, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_POST, $this->useRestApi);
+			return $response->getResponse();
+		}
+
+		/**
 		 * Delete SenderId
 		 * @return type
 		 */

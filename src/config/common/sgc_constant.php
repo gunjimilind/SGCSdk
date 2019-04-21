@@ -82,6 +82,7 @@
 		//CAMPAIGN API ENDPOINTS
 		const SGC_ENDPOINT_LINKTRACK_CREATE = "/linktrack/create";
 		const SGC_ENDPOINT_LINKTRACK_READ = "/linktrack/read";
+		const SGC_ENDPOINT_LINKTRACK_REPORT = "/linktrack/report";
 		const SGC_ENDPOINT_LINKTRACK_DELETE = "/linktrack/delete";
 		
 		//REPORT API ENDPOINTS

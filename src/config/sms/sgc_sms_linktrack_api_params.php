@@ -13,10 +13,15 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		//Send Method Values
 		const API_SMS_LINKTRACK_METHOD_CREATE = "create";
 		const API_SMS_LINKTRACK_METHOD_READ = "read";
+		const API_SMS_LINKTRACK_METHOD_REPORT = "report";
 		const API_SMS_LINKTRACK_METHOD_UPDATE = "update";
 		const API_SMS_LINKTRACK_METHOD_DELETE = "delete";
 		//Send Method Params
 		const API_SMS_LINKTRACK_PARAM_LINK_ID = "id";
+		const API_SMS_LINKTRACK_PARAM_CAMPAIGN_ID = "campaignid";
+		const API_SMS_LINKTRACK_PARAM_FROM_DATE = "fromdate";
+		const API_SMS_LINKTRACK_PARAM_TO_DATE = "todate";
+		const API_SMS_LINKTRACK_PARAM_GROUP_BY = "groupby";
 		const API_SMS_LINKTRACK_PARAM_IDENTIFIER = "identifier";
 		const API_SMS_LINKTRACK_PARAM_LONG_URL = "longurl";
 		const API_SMS_LINKTRACK_PARAM_TYPE = "type";
@@ -25,6 +30,7 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		//REQUEST METHOD ACCEPT
 		const API_SMS_LINKTRACK_REQUEST_METHOD_CREATE = array('POST', 'GET');
 		const API_SMS_LINKTRACK_REQUEST_METHOD_READ = array('POST', 'GET');
+		const API_SMS_LINKTRACK_REQUEST_METHOD_REPORT = array('POST', 'GET');
 		const API_SMS_LINKTRACK_REQUEST_METHOD_UPDATE = array('POST', 'GET');
 		const API_SMS_LINKTRACK_REQUEST_METHOD_DELETE = array('POST', 'GET');
 
