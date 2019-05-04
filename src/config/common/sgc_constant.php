@@ -9,8 +9,9 @@
 	class sgc_constant {
 
 		//SGC API LINK
-		const SGC_API = "http://localhost/smpp/SMSApi";
-		const SGC_OTP_API = "http://localhost/smpp/OTPApi";
+		const SERVER_HOST ="http://localhost";
+		const SGC_API =  "/SMSApi";
+		const SGC_OTP_API = "/OTPApi";
 		
 		//SENDERID API ENDPOINTS
 		const SGC_ENDPOINT_SENDER_ID_CREATE = "/senderid/create";

@@ -2,7 +2,7 @@
 
 	namespace SGCSdk\lib;
 
-	defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
+defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
 
 	/*	 * *******smsgatewaycentre******* * */
 
@@ -53,6 +53,7 @@
 		 * @param type $restApi
 		 */
 		function __construct($api, $endpoint, $data, $header, $method = "POST", $restApi = false) {
+			$api = \SGCSdk\config\sgc_constant::SERVER_HOST . $api;
 			$response = "";
 			$client = new \GuzzleHttp\Client();
 
@@ -82,7 +83,7 @@
 					$this->response = $e->getResponse();
 					$this->response = 500;
 				}
-			}else if ($method == 'FILE') {
+			} else if ($method == 'FILE') {
 				try {
 					$response = $client->request('POST', $api . $endpoint, [
 						'multipart' => $data,
@@ -95,7 +96,7 @@
 					$this->response = $e->getResponse();
 					$this->response = 500;
 				}
-			} 
+			}
 		}
 
 	}
