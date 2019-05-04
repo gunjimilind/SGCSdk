@@ -9,7 +9,8 @@
 	class sgc_constant {
 
 		//SGC API LINK
-		const SGC_API = "http://localhost/smpp/api";
+		const SGC_API = "http://localhost/smpp/SMSApi";
+		const SGC_OTP_API = "http://localhost/smpp/OTPApi";
 		
 		//SENDERID API ENDPOINTS
 		const SGC_ENDPOINT_SENDER_ID_CREATE = "/senderid/create";
@@ -65,9 +66,13 @@
 		const SGC_ENDPOINT_CONTACT_DELETE = "/contact/delete";					
 		
 		//SMS API ENDPOINTS
-		const SGC_ENDPOINT_SMS_BATCH = "/send/batch";
-		const SGC_ENDPOINT_SMS_PHONEBOOK = "/send/phonebook";
-		const SGC_ENDPOINT_SMS_FILE = "/send/file";
+		const SGC_ENDPOINT_SMS_BATCH = "/send";
+		const SGC_ENDPOINT_SMS_PHONEBOOK = "/send";
+		const SGC_ENDPOINT_SMS_FILE = "/send";
+		
+		//OTP API ENDPOINTS
+		const SGC_ENDPOINT_OTP_SEND = "/send";
+		const SGC_ENDPOINT_OTP_VERIFY = "/send";
 		
 		//SCHEDULE API ENDPOINTS
 		const SGC_ENDPOINT_SCHEDULE_READ = "/schedule/read";
