@@ -19,6 +19,7 @@
 		//User Params
 		const API_RESELLER_USER_PARAM_USER_TYPE = "usertype";
 		const API_RESELLER_USER_PARAM_USERNAME = "userloginname";
+		const API_RESELLER_USER_PARAM_PASSWORD = "password";
 		const API_RESELLER_USER_PARAM_EMAIL_ID = "email";
 		const API_RESELLER_USER_PARAM_CONTACT_NO = "mobileno";
 		const API_RESELLER_USER_PARAM_FULL_NAME = "fullname";

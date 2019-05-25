@@ -30,6 +30,7 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		private $userStatus;
 		private $product;
 		private $transactionType;
+		private $password;
 
 		/**
 		 * User Product
@@ -239,6 +240,14 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		}
 
 		/**
+		 * Password
+		 * @return string
+		 */
+		function getPassword() {
+			return $this->password;
+		}
+
+		/**
 		 * Set Credit
 		 * @param type $credit
 		 */
@@ -388,6 +397,14 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		 */
 		function setEnableCMS($enableCMS) {
 			$this->enableCMS = $enableCMS;
+		}
+
+		/**
+		 * Set Password
+		 * @param string $password
+		 */
+		function setPassword($password) {
+			$this->password = $password;
 		}
 
 	}

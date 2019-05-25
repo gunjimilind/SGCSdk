@@ -9,7 +9,7 @@
 	class sgc_constant {
 
 		//SGC API LINK
-		const SERVER_HOST ="http://localhost";
+		const SERVER_HOST ="http://localhost/smpp";
 		const SGC_API =  "/SMSApi";
 		const SGC_OTP_API = "/OTPApi";
 		
