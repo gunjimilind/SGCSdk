@@ -57,11 +57,21 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 			$response = "";
 			$client = new \GuzzleHttp\Client();
 
+			$updatedHeader = array();
+
+			foreach ($header as $key => $value) {
+				if ($value == "" || $value == null) {
+					
+				} else {
+					$updatedHeader[$key] = $value;
+				}
+			}
+
 			if ($method == 'POST') {
 				try {
 					$response = $client->request('POST', $api . $endpoint, [
 						'form_params' => $data,
-						'headers' => $header
+						'headers' => $updatedHeader
 					]);
 
 					$this->response = $response->getBody();
@@ -74,7 +84,7 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 				try {
 					$response = $client->request('GET', $api . $endpoint, [
 						'query' => $data,
-						'headers' => $header
+						'headers' => $updatedHeader
 					]);
 
 					$this->response = $response->getBody();
@@ -87,7 +97,7 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 				try {
 					$response = $client->request('POST', $api . $endpoint, [
 						'multipart' => $data,
-						'headers' => $header
+						'headers' => $updatedHeader
 					]);
 
 					$this->response = $response->getBody();
