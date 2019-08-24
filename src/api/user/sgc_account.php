@@ -92,6 +92,7 @@
 			$this->data[sgc_user_account_api_params::API_USER_ACCOUNT_PARAM_CITY] = $this->user->getCity();
 			$this->data[sgc_user_account_api_params::API_USER_ACCOUNT_PARAM_PROFILE_IMAGE] = $this->user->getProfilePic();
 			$this->data[sgc_user_account_api_params::API_USER_ACCOUNT_PARAM_DOMAIN_NAME] = $this->user->getDomainName();
+			$this->data[sgc_user_account_api_params::API_USER_ACCOUNT_PARAM_INDUSTRY] = $this->user->getIndustry();
 			$response = new sgc_callapi(sgc_constant::SGC_API, sgc_constant::SGC_ENDPOINT_ACCOUNT_UPDATE_PROFILE, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_POST, $this->useRestApi);
 			return $response->getResponse();
 		}

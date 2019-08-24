@@ -2,7 +2,7 @@
 
 	namespace SGCSdk\config;
 
-defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
+	defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
 
 	/*	 * *******smsgatewaycentre******* * */
 
@@ -21,6 +21,7 @@ defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is n
 		const API_USER_ACCOUNT_PARAM_FULL_NAME = "fullname";
 		const API_USER_ACCOUNT_PARAM_ADDRESS = "address";
 		const API_USER_ACCOUNT_PARAM_DOMAIN_NAME = "domainname";
+		const API_USER_ACCOUNT_PARAM_INDUSTRY = "industry";
 		const API_USER_ACCOUNT_PARAM_REGION = "region";
 		const API_USER_ACCOUNT_PARAM_COUNTRY = "country";
 		const API_USER_ACCOUNT_PARAM_CITY = "city";
