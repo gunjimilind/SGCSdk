@@ -1,6 +1,6 @@
 <?php
 
-	define("_SMSGATEWAYCENTRE_ACCESS", true);
+	define("_SMPPCENTER_ACCESS", true);
 
 	ini_set("display_errors", 1);
 

@@ -2,14 +2,14 @@
 
 	namespace SGCSdk\config;
 
-	defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
+	defined('_SMPPCENTER_ACCESS') OR exit('Direct access to this location is not allowed.');
 
 	/*	 * *******smsgatewaycentre******* * */
 
 	class sgc_constant {
 
 		//SGC API LINK
-		const SERVER_HOST ="http://localhost/smpp";
+		const SERVER_HOST ="http://127.0.0.1";
 		const SGC_API =  "/SMSApi";
 		const SGC_OTP_API = "/OTPApi";
 		
