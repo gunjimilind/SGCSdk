@@ -2,7 +2,7 @@
 
 	namespace SGCSdk\object;
 
-	defined('_SMPPCENTER_ACCESS') OR exit('Direct access to this location is not allowed.');
+defined('_SMPPCENTER_ACCESS') OR exit('Direct access to this location is not allowed.');
 
 	/*	 * *******smsgatewaycentre******* * */
 
@@ -29,6 +29,7 @@
 		private $senderId;
 		private $smsWebhook;
 		private $smsWebhookRate;
+		private $smsWebhookMethod;
 		private $uuId;
 		private $output;
 		private $id;
@@ -213,6 +214,14 @@
 		}
 
 		/**
+		 * SmsWebHookMethod
+		 * @return type
+		 */
+		function getSmsWebhookMethod() {
+			return $this->smsWebhookMethod;
+		}
+
+		/**
 		 * UuId
 		 * @return type
 		 */
@@ -259,7 +268,7 @@
 		function getDomainName() {
 			return $this->domainName;
 		}
-		
+
 		/**
 		 * Industry
 		 * @return string
@@ -437,6 +446,14 @@
 		}
 
 		/**
+		 * Set SmsWebHookMethod
+		 * @param type $smsWebhookMethod
+		 */
+		function setSmsWebhookMethod($smsWebhookMethod) {
+			$this->smsWebhookMethod = $smsWebhookMethod;
+		}
+
+		/**
 		 * Set UuId
 		 * @param type $uuId
 		 */
@@ -483,7 +500,7 @@
 		function setDomainName($domainName) {
 			$this->domainName = $domainName;
 		}
-		
+
 		/**
 		 * Set Industry
 		 * @param string $industry

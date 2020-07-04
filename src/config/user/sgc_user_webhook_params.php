@@ -18,6 +18,7 @@
 		//User Params
 		const API_USER_WEBHOOK_PARAM_SMS_WEBHOOK = "smswebhook";
 		const API_USER_WEBHOOK_PARAM_SMS_WEBHOOK_RATE = "smswebhookrate";
+		const API_USER_WEBHOOK_PARAM_SMS_WEBHOOK_METHOD = "smswebhookmethod";
 
 	}
 	

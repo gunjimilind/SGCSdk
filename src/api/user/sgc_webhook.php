@@ -56,6 +56,7 @@
 		function Create() {
 			$this->data[sgc_user_webhook_params::API_USER_WEBHOOK_PARAM_SMS_WEBHOOK] = $this->user->getSmsWebhook();
 			$this->data[sgc_user_webhook_params::API_USER_WEBHOOK_PARAM_SMS_WEBHOOK_RATE] = $this->user->getSmsWebhookRate();
+			$this->data[sgc_user_webhook_params::API_USER_WEBHOOK_PARAM_SMS_WEBHOOK_METHOD] = $this->user->getSmsWebhookMethod();
 			$response = new sgc_callapi(sgc_constant::SGC_API, sgc_constant::SGC_ENDPOINT_WEBHOOK_CREATE, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_POST, $this->useRestApi);
 			return $response->getResponse();
 		}
@@ -76,6 +77,7 @@
 		function Update() {
 			$this->data[sgc_user_webhook_params::API_USER_WEBHOOK_PARAM_SMS_WEBHOOK] = $this->user->getSmsWebhook();
 			$this->data[sgc_user_webhook_params::API_USER_WEBHOOK_PARAM_SMS_WEBHOOK_RATE] = $this->user->getSmsWebhookRate();
+			$this->data[sgc_user_webhook_params::API_USER_WEBHOOK_PARAM_SMS_WEBHOOK_METHOD] = $this->user->getSmsWebhookMethod();
 			$response = new sgc_callapi(sgc_constant::SGC_API, sgc_constant::SGC_ENDPOINT_WEBHOOK_UPDATE, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_POST, $this->useRestApi);
 			return $response->getResponse();
 		}
