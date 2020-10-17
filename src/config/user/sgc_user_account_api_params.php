@@ -28,6 +28,7 @@
 		const API_USER_ACCOUNT_PARAM_FROM_DATE = "fromdate";
 		const API_USER_ACCOUNT_PARAM_TO_DATE = "todate";
 		const API_USER_ACCOUNT_PARAM_PROFILE_IMAGE = "profilepic";
+           	const API_USER_ACCOUNT_PARAM_DLTENTITYID = "dltEntityId";
 
 	}
 	

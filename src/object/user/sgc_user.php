@@ -37,6 +37,7 @@ defined('_SMPPCENTER_ACCESS') OR exit('Direct access to this location is not all
 		private $message;
 		private $domainName;
 		private $industry;
+                private $dltEntityId;
 
 		/**
 		 * Main Constructor
@@ -45,6 +46,14 @@ defined('_SMPPCENTER_ACCESS') OR exit('Direct access to this location is not all
 			
 		}
 
+                /**
+                 * DLT EntityId
+                 * @return int
+                 */
+                function getDltEntityId() {
+			return $this->email;
+		}
+                
 		/**
 		 * Email
 		 * @return type
@@ -277,6 +286,14 @@ defined('_SMPPCENTER_ACCESS') OR exit('Direct access to this location is not all
 			return $this->industry;
 		}
 
+                /**
+		 * Set DltEntityId
+		 * @param type $dltEntityId
+		 */
+		function setDltEntityId($dltEntityId) {
+			$this->dltEntityId = $dltEntityId;
+		}
+                
 		/**
 		 * Set Email
 		 * @param type $email
