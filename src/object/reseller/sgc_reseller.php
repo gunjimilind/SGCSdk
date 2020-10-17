@@ -2,7 +2,7 @@
 
 	namespace SGCSdk\object;
 
-defined('_SMPPCENTER_ACCESS') OR exit('Direct access to this location is not allowed.');
+        defined('_SMPPCENTER_ACCESS') OR exit('Direct access to this location is not allowed.');
 
 	/*	 * *******smsgatewaycentre******* * */
 
