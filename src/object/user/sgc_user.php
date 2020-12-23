@@ -38,6 +38,7 @@
 		private $domainName;
 		private $industry;
                 private $dltEntityId;
+                private $dltTemplateId;
 
 		/**
 		 * Main Constructor
@@ -54,6 +55,14 @@
 			return $this->dltEntityId;
 		}
                 
+                /**
+                 * DLT TemplateId
+                 * @return int
+                 */
+                function getDltTemplateId() {
+			return $this->dltTemplateId;
+		}
+                                
 		/**
 		 * Email
 		 * @return type
@@ -292,6 +301,14 @@
 		 */
 		function setDltEntityId($dltEntityId) {
 			$this->dltEntityId = $dltEntityId;
+		}
+                
+                /**
+		 * Set DltTemplateId
+		 * @param type $dltTemplateId
+		 */
+		function setDltTemplateId($dltTemplateId) {
+			$this->dltTemplateId = $dltTemplateId;
 		}
                 
 		/**

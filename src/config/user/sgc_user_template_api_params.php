@@ -18,5 +18,6 @@
 		//User Params
 		const API_USER_TEMPLATE_PARAM_ID = "id";
 		const API_USER_TEMPLATE_PARAM_MESSAGE = "message";
+                const API_USER_TEMPLATE_PARAM_DLTTEMPLATEID = "dltTemplateId";
 	}
 	
