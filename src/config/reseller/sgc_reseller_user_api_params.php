@@ -33,6 +33,7 @@
 		const API_RESELLER_USER_PARAM_NEW_PASSWORD = "newpassword";
 		const API_RESELLER_USER_PARAM_NOTIFY_USER = "notifyuser";
 		const API_RESELLER_USER_PARAM_CITY = "city";
+                const API_RESELLER_USER_PARAM_DLT_ENTITY_ID = "dltEntityId";
 
 	}
 	

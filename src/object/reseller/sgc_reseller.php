@@ -30,6 +30,7 @@
 		private $userStatus;
 		private $product;
 		private $transactionType;
+		private $dltEntityId;
 
 		/**
 		 * User Product
@@ -389,6 +390,23 @@
 		function setEnableCMS($enableCMS) {
 			$this->enableCMS = $enableCMS;
 		}
+		
+		/**
+		 * Get dltEntityId
+		 * @param type $dltEntityId
+		 */
+		function getDltEntityId() {
+			return $this->dltEntityId;
+		}
 
+		/**
+		 * Set dltEntityId
+		 * @param type $dltEntityId
+		 */
+		function setDltEntityId($dltEntityId) {
+			$this->dltEntityId = $dltEntityId;
+		}
+
+	
 	}
 	
