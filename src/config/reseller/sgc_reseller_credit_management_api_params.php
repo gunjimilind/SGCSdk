@@ -22,6 +22,7 @@
 		const API_RESELLER_CREDIT_MANAGEMENT_USER_LOGIN_NAME = "userloginname";
 		const API_RESELLER_CREDIT_MANAGEMENT_FROM_DATE = "fromdate";
 		const API_RESELLER_CREDIT_MANAGEMENT_TO_DATE = "todate";
+                const API_RESELLER_CREDIT_MANAGEMENT_EXPIRYDATE = "expiryDate";
 
 	}
 	
