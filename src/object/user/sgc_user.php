@@ -39,6 +39,7 @@
 		private $industry;
                 private $dltEntityId;
                 private $dltTemplateId;
+		private $userTimezone;
 
 		/**
 		 * Main Constructor
@@ -46,7 +47,15 @@
 		function __construct() {
 			
 		}
-
+		
+		/**
+                 * User Timezone
+                 * @return int
+                 */
+                function getUserTimezone() {
+			return $this->userTimezone;
+		}
+		
                 /**
                  * DLT EntityId
                  * @return int
@@ -295,6 +304,14 @@
 			return $this->industry;
 		}
 
+		/**
+                 * Set User Timezone
+                 * @return int
+                 */
+                function setUserTimezone($userTimezone) {
+			$this->userTimezone = $userTimezone;
+		}
+		
                 /**
 		 * Set DltEntityId
 		 * @param type $dltEntityId
